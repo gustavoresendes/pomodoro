@@ -19,6 +19,7 @@ onload = () => {
 };
 
 function start() {
+  
   document.querySelector("#start").style.display = "none";
   document.querySelector("#reset").style.display = "block";
 
@@ -59,10 +60,10 @@ function reset() {
   document.querySelector("#reset").style.display = "none";
   document.querySelector("#start").style.display = "block";
   
-  workMinutes = workTime;
+  workTime = 25
   seconds = "00";
 
-  document.querySelector("#minutes").innerHTML = workMinutes;
+  document.querySelector("#minutes").innerHTML = workTime;
   document.querySelector("#seconds").innerHTML = seconds;
 
   clearInterval(timerInterval)
